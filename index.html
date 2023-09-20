@@ -95,7 +95,7 @@
 				<p> <input type="radio" name="genre" value="rap"> Rap</p>
 				<p> Please enter your feedback:</p>
 				<p></p>
-					<textarea name="feedback" cols="15" rows="15">
+					<textarea name="feedback" cols="15" rows="15" maxlength="500">
 						No comments
 					</textarea>
 				</p>
@@ -131,7 +131,10 @@
 		<form action="">
 			<p>Email*: <input type="email" placeholder="xxx@xxx.com" name="email" required></p>
 			<p>Tel: <input type="tel" placeholder="xxx-xxx-xxxx" name="tel" pattern="/d{3}-/d{3}-/d{4}" required></p>
-			<p><input type="submit" value="Submit?"></p>
+			<p>Rate the site!<input type="number" min="0" max="10" name="Rating"></p>
+			<p>Give me a score! 0<input type="range" min="0" max="10" name="score">10</p>
+			<p><input type="submit" value="Submit?" formnovalidate></p>
+
 
 		</form>
 
